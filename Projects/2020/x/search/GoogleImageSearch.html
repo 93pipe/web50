@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link   rel="stylesheet" href="styles.css">
+        
+        <title>Image Search</title>
+    </head>
+    <body>
+        <table  class="table1" id="table1" >
+            <tr>
+                <td>
+                    <a href="https://Google.com">
+                        <img    class="img1" src="google.png" alt="Gfotos" > 
+                    </a> 
+                </td>
+               <td  style="text-align: right; ">
+                <ul style="text-align: right;">
+                    <li><a class="a" href="GoogleSearch.html">Google Search</a></li>
+                    <li><a class="b" href="GoogleAdvancedSearch.html">Google Advance Search</a></li>
+                </ul>
+                       
+               </td>
+
+            </tr>           
+        </table>
+            <div    class="divcenter">               <!--imagen de google-->
+                <img src="Foto_Google_Imagenes.PNG" alt="Gfotos">
+            </div>
+
+        <div id="div2"  class="divcenter">
+            <form   name="f"    action="https://www.google.cl/search"   id="h"  method="GET">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="hidden" name="sxsrf" value="">
+                <input type="hidden" name="source" value="hp">
+                <input type="hidden" name="oq" value="">
+                <input type="hidden" name="sclient" value="image">
+                <input class="input2"    type="text" name="q" id="q" placeholder="What do you want to search?"    autocomplete="off" onClick="document.f.oq.value=document.f.q.value;">
+            </form>
+            <form   action="https://www.google.cl/search"    name="link1"     method="get">
+            
+                <br>
+                <input type="hidden" name="tbm" value="isch">
+                <input type="hidden" name="sxsrf" value="">
+                <input type="hidden" name="source" value="hp">
+                <input type="hidden" name="ei" value="">
+                <input type="hidden" name="q" value="">
+                <input type="hidden" name="oq" value="">
+                <input type="hidden" name="gs_lcp" value="">
+                <input type="hidden" name="sclient" value="image">
+                <input type="hidden" name="ved" value="">
+                
+                <input type="hidden" name="client" value="">
+                <input class="input2" type="submit" value="Google Search"  id="gs"    onClick="document.link1.q.value=document.f.q.value; document.link1.oq.value=document.f.q.value;">
+            </form>
+    </body>
+</html>
